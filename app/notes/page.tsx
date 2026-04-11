@@ -335,6 +335,95 @@ export default function Notes() {
           font-size: 12px;
           letter-spacing: 0.06em;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            padding: 14px 24px;
+          }
+
+          .nav-back {
+            font-size: 13px;
+          }
+
+          .nav-cta {
+            font-size: 12px;
+            padding: 8px 18px;
+          }
+
+          .hero {
+            min-height: 400px;
+            padding: 48px 24px;
+          }
+
+          .hero-lede {
+            font-size: 22px;
+            line-height: 1.5;
+          }
+
+          section {
+            padding: 48px 24px;
+          }
+
+          .section-title {
+            font-size: 30px;
+            margin-bottom: 32px;
+          }
+
+          .inside-grid {
+            grid-template-columns: 1fr;
+            gap: 36px;
+          }
+
+          .inside-number {
+            font-size: 40px;
+          }
+
+          .steps {
+            grid-template-columns: 1fr;
+            gap: 36px;
+          }
+
+          .quote-section {
+            padding: 56px 24px;
+          }
+
+          .quote-mark {
+            font-size: 64px;
+          }
+
+          .quote-text {
+            font-size: 20px;
+          }
+
+          .meet {
+            grid-template-columns: 1fr;
+            gap: 36px;
+          }
+
+          .meet-img {
+            aspect-ratio: 3/2;
+          }
+
+          .final-cta {
+            padding: 56px 24px;
+          }
+
+          .final-price {
+            font-size: 40px;
+          }
+
+          .btn-light {
+            padding: 16px 36px;
+            font-size: 14px;
+          }
+
+          footer {
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px 24px;
+            text-align: center;
+          }
+        }
       `}</style>
 
       <nav>

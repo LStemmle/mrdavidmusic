@@ -319,6 +319,78 @@ export default function Recordings() {
           color: var(--purple);
           text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            gap: 14px;
+            padding: 16px 24px;
+          }
+
+          .nav-links {
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .hero {
+            height: 360px;
+          }
+
+          .hero-content {
+            padding: 0 24px 36px;
+          }
+
+          .hero-title {
+            font-size: 42px;
+          }
+
+          .hero-sub {
+            font-size: 15px;
+          }
+
+          .section-title {
+            font-size: 32px;
+          }
+
+          .album {
+            padding: 48px 24px;
+          }
+
+          .album-layout {
+            grid-template-columns: 1fr;
+            gap: 32px;
+          }
+
+          .album-art {
+            max-width: 240px;
+          }
+
+          .album-title {
+            font-size: 40px;
+          }
+
+          .symphony {
+            padding: 48px 24px;
+          }
+
+          .performance-grid {
+            grid-template-columns: 1fr;
+          }
+
+          footer {
+            flex-direction: column;
+            gap: 16px;
+            padding: 32px 24px;
+            text-align: center;
+          }
+
+          .footer-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+          }
+        }
       `}</style>
 
       <nav>

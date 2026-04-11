@@ -372,6 +372,82 @@ export default function Lessons() {
           color: #3A3830;
           text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            gap: 14px;
+            padding: 16px 24px;
+          }
+
+          .nav-links {
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .hero {
+            height: 360px;
+          }
+
+          .hero-content {
+            padding: 0 24px 36px;
+          }
+
+          .hero-title {
+            font-size: 42px;
+          }
+
+          .hero-sub {
+            font-size: 15px;
+          }
+
+          .offerings {
+            padding: 48px 24px;
+          }
+
+          .section-title {
+            font-size: 32px;
+            margin-bottom: 32px;
+          }
+
+          .offerings-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .offering-card-photo {
+            aspect-ratio: 3/2;
+          }
+
+          .offering-card-body {
+            padding: 24px 24px 32px;
+          }
+
+          .collection {
+            padding: 48px 24px;
+          }
+
+          .collection-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .contact {
+            grid-template-columns: 1fr;
+            padding: 48px 24px;
+            gap: 48px;
+          }
+
+          .contact-left .section-title {
+            font-size: 28px;
+          }
+
+          footer {
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px 24px;
+            text-align: center;
+          }
+        }
       `}</style>
 
       <nav>

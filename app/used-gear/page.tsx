@@ -344,6 +344,86 @@ export default function UsedGear() {
           font-size: 12px;
           color: #4A4840;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            gap: 14px;
+            padding: 16px 24px;
+          }
+
+          .nav-links {
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .hero {
+            height: 360px;
+          }
+
+          .hero-content {
+            padding: 0 24px 36px;
+          }
+
+          .hero-title {
+            font-size: 42px;
+          }
+
+          .hero-sub {
+            font-size: 15px;
+          }
+
+          .section-title {
+            font-size: 32px;
+          }
+
+          .intro {
+            grid-template-columns: 1fr;
+            padding: 48px 24px;
+            gap: 36px;
+          }
+
+          .inventory {
+            padding: 48px 24px;
+          }
+
+          .inventory-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .team {
+            padding: 48px 24px;
+          }
+
+          .team-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .find-us {
+            grid-template-columns: 1fr;
+            padding: 48px 24px;
+            gap: 48px;
+          }
+
+          .selling-gear {
+            border-left: none;
+            border-top: 4px solid var(--blue);
+          }
+
+          footer {
+            flex-direction: column;
+            gap: 16px;
+            padding: 32px 24px;
+            text-align: center;
+          }
+
+          .footer-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+          }
+        }
       `}</style>
 
       <nav>

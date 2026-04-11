@@ -181,6 +181,65 @@ export default function Home() {
           font-size: 12px;
           letter-spacing: 0.08em;
         }
+
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            gap: 16px;
+            padding: 18px 24px;
+          }
+
+          .nav-links {
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .hero {
+            height: 420px;
+          }
+
+          .hero-photo {
+            width: 100%;
+          }
+
+          .hero-fade {
+            background: linear-gradient(to right, #161614 10%, rgba(22,22,20,0.8) 50%, rgba(22,22,20,0.5) 100%);
+          }
+
+          .hero-content {
+            padding: 0 24px;
+            max-width: 100%;
+          }
+
+          .hero-name {
+            font-size: 44px;
+            margin-bottom: 16px;
+          }
+
+          .hero-prompt {
+            font-size: 17px;
+          }
+
+          .cards {
+            grid-template-columns: 1fr;
+          }
+
+          .card {
+            padding: 32px 24px;
+          }
+
+          .card-desc {
+            font-size: 15px;
+          }
+
+          footer {
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px 24px;
+            text-align: center;
+          }
+        }
       `}</style>
 
       <nav>
