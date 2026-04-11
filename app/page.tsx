@@ -15,7 +15,7 @@ export default function Home() {
 
         body {
           font-family: 'Source Sans 3', sans-serif;
-          background-color: #161614;
+          background-color: #F5F0E8;
           color: #F0EDE6;
           min-height: 100vh;
         }
@@ -26,6 +26,7 @@ export default function Home() {
           align-items: center;
           padding: 22px 56px;
           border-bottom: 1px solid #2a2a26;
+          background-color: #161614;
         }
 
         .nav-logo {
@@ -76,7 +77,7 @@ export default function Home() {
         .hero-fade {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to right, #161614 28%, rgba(22,22,20,0.7) 55%, transparent 75%);
+          background: linear-gradient(to right, #2C2418 28%, rgba(44,36,24,0.7) 55%, transparent 75%);
           z-index: 1;
         }
 
@@ -115,12 +116,12 @@ export default function Home() {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
           gap: 1px;
-          background-color: #222220;
-          border-top: 1px solid #222220;
+          background-color: #DDD5C4;
+          border-top: 1px solid #DDD5C4;
         }
 
         .card {
-          background-color: #161614;
+          background-color: #F5F0E8;
           padding: 44px 36px;
           cursor: pointer;
           transition: background-color 0.25s ease;
@@ -130,8 +131,8 @@ export default function Home() {
         }
 
         .card:hover {
-          background-color: #1c1c1a;
-          border-top-color: var(--accent-light);
+          background-color: #EDE6D8;
+          border-top-color: var(--accent-dark);
         }
 
         .card-number { display: none; }
@@ -141,17 +142,17 @@ export default function Home() {
           font-size: 20px;
           font-weight: 700;
           margin-bottom: 14px;
-          color: #F0EDE6;
+          color: #1A1610;
           line-height: 1.25;
           transition: color 0.25s ease;
         }
 
-        .card:hover .card-title { color: var(--accent-light); }
+        .card:hover .card-title { color: var(--accent); }
 
         .card-desc {
           font-size: 17px;
           line-height: 1.75;
-          color: #A8A098;
+          color: #5A5248;
           margin-bottom: 28px;
           font-weight: 400;
         }
@@ -164,20 +165,20 @@ export default function Home() {
           transition: color 0.25s ease;
         }
 
-        .card:hover .card-cta { color: var(--accent-light); }
+        .card:hover .card-cta { color: var(--accent-dark); }
 
-        .card-lessons  { --accent: #D4500A; --accent-light: #F4824A; }
-        .card-notes    { --accent: #B8892A; --accent-light: #E8B84B; }
-        .card-gear     { --accent: #2B5EA7; --accent-light: #4A80D4; }
-        .card-music    { --accent: #6A4A9A; --accent-light: #9A7AC8; }
+        .card-lessons  { --accent: #D4500A; --accent-dark: #A83D08; }
+        .card-notes    { --accent: #B8892A; --accent-dark: #8A6418; }
+        .card-gear     { --accent: #2B5EA7; --accent-dark: #1E4580; }
+        .card-music    { --accent: #6A4A9A; --accent-dark: #4E3472; }
 
         footer {
           padding: 28px 56px;
-          border-top: 1px solid #222220;
+          border-top: 1px solid #DDD5C4;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          color: #383630;
+          color: #8A8070;
           font-size: 12px;
           letter-spacing: 0.08em;
         }
