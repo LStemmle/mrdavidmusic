@@ -480,7 +480,7 @@ export default function Notes() {
           <div className="step">
             <div className="step-number">3</div>
             <h3 className="step-title">Get mail worth opening</h3>
-            <p className="step-desc">Every month a new envelope shows up with a letter full of music history, artist stories, and the kind of context that makes you hear everything differently. Plus a collectible card and a playlist to go deeper.</p>
+            <p className="step-desc">Every month a new envelope shows up with a letter full of music history, artist stories, and the kind of context that makes you hear everything differently. The letter also includes a collectible musical instrument card and a playlist that matches that month&apos;s theme.</p>
           </div>
         </div>
       </section>
