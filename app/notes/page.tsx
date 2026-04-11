@@ -286,22 +286,54 @@ export default function Notes() {
           line-height: 1.8;
         }
 
-        .final-price {
-          font-family: 'Abril Fatface', serif;
-          font-size: 52px;
-          color: #fff;
-          margin-bottom: 28px;
-          line-height: 1;
+        .waitlist-form {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          max-width: 420px;
+          margin: 0 auto;
+          text-align: left;
         }
 
-        .final-price-sub {
+        .waitlist-form .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .waitlist-form .form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 18px;
+        }
+
+        .waitlist-form label {
+          font-size: 11px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #A8B888;
+        }
+
+        .waitlist-form input {
+          background-color: rgba(255,255,255,0.1);
+          border: 1px solid rgba(255,255,255,0.2);
+          color: var(--parchment);
+          font-family: 'Libre Baskerville', serif;
           font-size: 14px;
-          color: #E8DFC8;
-          margin-bottom: 32px;
-          font-style: italic;
+          padding: 12px 16px;
+          outline: none;
+          transition: border-color 0.2s;
         }
 
-        .btn-light {
+        .waitlist-form input::placeholder {
+          color: #8A9870;
+        }
+
+        .waitlist-form input:focus {
+          border-color: var(--parchment);
+        }
+
+        .btn-waitlist {
           display: inline-block;
           background-color: var(--parchment);
           color: var(--brown);
@@ -313,10 +345,10 @@ export default function Notes() {
           cursor: pointer;
           letter-spacing: 0.06em;
           transition: background-color 0.2s;
-          text-decoration: none;
+          align-self: center;
         }
 
-        .btn-light:hover { background-color: #fff; }
+        .btn-waitlist:hover { background-color: #fff; }
 
         .cta-note {
           margin-top: 18px;
@@ -412,7 +444,11 @@ export default function Notes() {
             font-size: 40px;
           }
 
-          .btn-light {
+          .waitlist-form .form-row {
+            grid-template-columns: 1fr;
+          }
+
+          .btn-waitlist {
             padding: 16px 36px;
             font-size: 14px;
           }
@@ -505,10 +541,25 @@ export default function Notes() {
 
       <section className="final-cta" id="subscribe">
         <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and your card won&apos;t be charged until your first mailing ships.</p>
-        <div className="final-price">$12/month</div>
-        <p className="final-price-sub">Cancel at any time.</p>
-        <a href="#" className="btn-light">Reserve Your Spot</a>
+        <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and we&apos;ll let you know when the first mailing ships.</p>
+        <form className="waitlist-form" name="waitlist" data-netlify="true">
+          <input type="hidden" name="form-name" value="waitlist" />
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First name" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last name" required />
+            </div>
+          </div>
+          <div className="form-group">
+            <label htmlFor="waitlist-email">Email address</label>
+            <input type="email" id="waitlist-email" name="email" placeholder="you@example.com" required />
+          </div>
+          <button type="submit" className="btn-waitlist">Reserve Your Spot</button>
+        </form>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
