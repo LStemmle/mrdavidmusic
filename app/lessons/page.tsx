@@ -502,7 +502,7 @@ export default function Lessons() {
             <div className="offering-card-body">
               <div className="offering-number">02</div>
               <h3 className="offering-title">Instrument Explorer</h3>
-              <p className="offering-desc">An 8-week series where students explore David&apos;s collection of 230+ instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with real instruments from around the world.</p>
+              <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230+ instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with real instruments from around the world.</p>
             </div>
           </div>
 
