@@ -8,7 +8,7 @@ export default function WaitlistForm() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    await fetch("/", {
+    await fetch("/notes", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
