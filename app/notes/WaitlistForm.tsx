@@ -14,6 +14,9 @@ export default function WaitlistForm() {
       body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
     });
     setSubmitted(true);
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "form_submit", { form_name: "waitlist" });
+    }
   };
 
   if (submitted) {
