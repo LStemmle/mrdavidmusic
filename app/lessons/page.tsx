@@ -603,10 +603,6 @@ export default function Lessons() {
               <div className="contact-label">Phone</div>
               <a href="tel:9198243993">919-824-3993</a>
             </div>
-            <div>
-              <div className="contact-label">Email</div>
-              <a href="mailto:hello@mrdavidmusic.com">hello@mrdavidmusic.com</a>
-            </div>
           </div>
         </div>
 

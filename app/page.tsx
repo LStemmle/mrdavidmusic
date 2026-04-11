@@ -274,7 +274,7 @@ export default function Home() {
         <Link href="/notes" className="card card-notes">
           <div className="card-number">02</div>
           <h2 className="card-title">Notes from Mr. David</h2>
-          <p className="card-desc">A snail mail musical explorer club. $12/month. Each envelope packed with an instrument card, a letter from Mr. David, and a curated playlist.</p>
+          <p className="card-desc">A snail mail musical explorer club. Each envelope packed with an instrument card, a letter from Mr. David, and a curated playlist.</p>
           <div className="card-cta">Join the Club &rarr;</div>
         </Link>
 
