@@ -347,7 +347,7 @@ export default function UsedGear() {
       `}</style>
 
       <nav>
-        <Link className="nav-logo" href="/">David Stemmle</Link>
+        <Link className="nav-logo" href="/">David Stemmle Music</Link>
         <div className="nav-links">
           <Link href="/lessons">Lessons</Link>
           <Link href="/notes">Notes</Link>
