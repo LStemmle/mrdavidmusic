@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Music Lessons — David Stemmle",
@@ -357,6 +358,29 @@ export default function Lessons() {
 
         .btn-submit:hover { background-color: var(--orange-dark); }
 
+        .form-success {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          min-height: 200px;
+        }
+
+        .form-success-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 24px;
+          font-weight: 700;
+          color: #F0EAE0;
+          margin-bottom: 12px;
+        }
+
+        .form-success-desc {
+          font-size: 15px;
+          color: #9A9088;
+          line-height: 1.7;
+        }
+
         footer {
           background-color: #0E0C0A;
           padding: 28px 56px;
@@ -606,22 +630,7 @@ export default function Lessons() {
           </div>
         </div>
 
-        <form className="contact-form" name="contact" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <div className="form-group">
-            <label htmlFor="name">Your name</label>
-            <input type="text" id="name" placeholder="First and last name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email address</label>
-            <input type="email" id="email" placeholder="you@example.com" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">What brings you here?</label>
-            <textarea id="message" placeholder="What instrument, what experience level, any questions..."></textarea>
-          </div>
-          <button type="submit" className="btn-submit">Send Message</button>
-        </form>
+        <ContactForm />
       </section>
 
       <footer>

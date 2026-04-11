@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import WaitlistForm from "./WaitlistForm";
 
 export const metadata: Metadata = {
   title: "Notes from Mr. David",
@@ -350,6 +351,29 @@ export default function Notes() {
 
         .btn-waitlist:hover { background-color: #fff; }
 
+        .form-success {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 20px 0;
+        }
+
+        .form-success-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 28px;
+          font-weight: 700;
+          color: var(--parchment);
+          margin-bottom: 12px;
+        }
+
+        .form-success-desc {
+          font-size: 15px;
+          color: #A8B888;
+          line-height: 1.7;
+        }
+
         .cta-note {
           margin-top: 18px;
           font-size: 13px;
@@ -542,24 +566,7 @@ export default function Notes() {
       <section className="final-cta" id="subscribe">
         <div className="section-title">Become a Founding Member</div>
         <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and we&apos;ll let you know when the first mailing ships.</p>
-        <form className="waitlist-form" name="waitlist" data-netlify="true">
-          <input type="hidden" name="form-name" value="waitlist" />
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="first-name">First name</label>
-              <input type="text" id="first-name" name="first-name" placeholder="First name" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="last-name">Last name</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Last name" required />
-            </div>
-          </div>
-          <div className="form-group">
-            <label htmlFor="waitlist-email">Email address</label>
-            <input type="email" id="waitlist-email" name="email" placeholder="you@example.com" required />
-          </div>
-          <button type="submit" className="btn-waitlist">Reserve Your Spot</button>
-        </form>
+        <WaitlistForm />
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
