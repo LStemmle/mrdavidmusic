@@ -379,7 +379,7 @@ export default function Lessons() {
         <div className="nav-links">
           <Link href="/lessons" className="active">Lessons</Link>
           <Link href="/notes">Notes</Link>
-          <Link href="/used-gear">Gear</Link>
+          <Link href="/used-gear">Used Gear</Link>
           <Link href="/recordings">Recordings</Link>
         </div>
       </nav>

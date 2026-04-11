@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -42,12 +43,16 @@ export default function Notes() {
           z-index: 100;
         }
 
-        .nav-brand {
-          font-family: 'Playfair Display', serif;
-          font-size: 22px;
+        .nav-back {
+          font-family: 'Libre Baskerville', serif;
+          font-size: 14px;
           color: var(--parchment);
-          letter-spacing: 0.04em;
+          text-decoration: none;
+          letter-spacing: 0.02em;
+          transition: color 0.2s;
         }
+
+        .nav-back:hover { color: #fff; }
 
         .nav-cta {
           background-color: var(--terracotta);
@@ -333,7 +338,7 @@ export default function Notes() {
       `}</style>
 
       <nav>
-        <div className="nav-brand">Notes from Mr. David</div>
+        <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
         <button className="nav-cta">Become a Founding Member</button>
       </nav>
 
