@@ -12,6 +12,7 @@ export default function Notes() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Caveat:wght@600&family=Abril+Fatface&display=swap');
 
+        html { scroll-behavior: smooth; }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
@@ -65,6 +66,7 @@ export default function Notes() {
           cursor: pointer;
           letter-spacing: 0.05em;
           transition: background-color 0.2s;
+          text-decoration: none;
         }
 
         .nav-cta:hover { background-color: #a04e2c; }
@@ -488,7 +490,7 @@ export default function Notes() {
 
       <nav>
         <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
-        <button className="nav-cta">Become a Founding Member</button>
+        <a href="#waitlist-section" className="nav-cta">Become a Founding Member</a>
       </nav>
 
       <section className="hero">
@@ -497,7 +499,7 @@ export default function Notes() {
         <div className="hero-overlay"></div>
         <div className="hero-center">
           <p className="hero-lede">Join our musical explorer snail mail club. Get monthly letters in your mailbox that boost your musical knowledge and spark your passion. <strong>Adventure awaits.</strong></p>
-          <a href="#subscribe" className="btn-primary">Reserve Your Spot</a>
+          <a href="#waitlist-section" className="btn-primary">Reserve Your Spot</a>
         </div>
       </section>
 
@@ -563,7 +565,7 @@ export default function Notes() {
         </div>
       </section>
 
-      <section className="final-cta" id="subscribe">
+      <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
         <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and we&apos;ll let you know when the first mailing ships.</p>
         <WaitlistForm />
