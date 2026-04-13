@@ -27,6 +27,9 @@ export default function Home() {
           padding: 22px 56px;
           border-bottom: 1px solid #2a2a26;
           background-color: #161614;
+          position: sticky;
+          top: 0;
+          z-index: 100;
         }
 
         .nav-logo {
