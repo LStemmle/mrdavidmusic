@@ -428,6 +428,7 @@ export default function Recordings() {
               <a className="stream-btn stream-btn-primary" href="https://recklessmartin.bandcamp.com/album/mute" target="_blank" rel="noopener noreferrer">Bandcamp</a>
               <a className="stream-btn stream-btn-secondary" href="https://open.spotify.com/album/67ZnSP7P0hH2uo5K4bpL0O" target="_blank" rel="noopener noreferrer">Spotify</a>
               <a className="stream-btn stream-btn-secondary" href="https://music.apple.com/us/album/mute/1685902967" target="_blank" rel="noopener noreferrer">Apple Music</a>
+              <a className="stream-btn stream-btn-secondary" href="https://music.youtube.com/playlist?list=OLAK5uy_kfnCsmC-ylIuehDMCkw0NWJRJStK-Ywjk&si=_w3INm4j7aIXlWV6" target="_blank" rel="noopener noreferrer">YouTube Music</a>
             </div>
             <p className="bandcamp-note">More recordings, including other albums and student projects, are on <a href="https://recklessmartin.bandcamp.com/music" target="_blank" rel="noopener noreferrer">recklessmartin.bandcamp.com</a>.</p>
           </div>
