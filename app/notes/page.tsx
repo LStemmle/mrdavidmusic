@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import WaitlistForm from "./WaitlistForm";
+
 
 export const metadata: Metadata = {
   title: "Notes from Mr. David",
@@ -347,6 +347,7 @@ export default function Notes() {
           border: none;
           cursor: pointer;
           letter-spacing: 0.06em;
+          text-decoration: none;
           transition: background-color 0.2s;
           align-self: center;
         }
@@ -568,7 +569,7 @@ export default function Notes() {
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
         <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and we&apos;ll let you know when the first mailing ships.</p>
-        <WaitlistForm />
+        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
