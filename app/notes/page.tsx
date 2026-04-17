@@ -491,7 +491,7 @@ export default function Notes() {
 
       <nav>
         <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
-        <a href="#waitlist-section" className="nav-cta">Become a Founding Member</a>
+        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="nav-cta">Become a Founding Member</a>
       </nav>
 
       <section className="hero">
@@ -500,7 +500,7 @@ export default function Notes() {
         <div className="hero-overlay"></div>
         <div className="hero-center">
           <p className="hero-lede">Join our musical explorer snail mail club. Get monthly letters in your mailbox that boost your musical knowledge and spark your passion. <strong>Adventure awaits.</strong></p>
-          <a href="#waitlist-section" className="btn-primary">Reserve Your Spot</a>
+          <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-primary">Become a Founding Member</a>
         </div>
       </section>
 
@@ -568,8 +568,8 @@ export default function Notes() {
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-sub">We&apos;re launching summer 2026. Sign up now and we&apos;ll let you know when the first mailing ships.</p>
-        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+        <p className="final-cta-sub">First mailing ships early summer 2026. Sign up today and lock in your founding member spot.</p>
+        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
