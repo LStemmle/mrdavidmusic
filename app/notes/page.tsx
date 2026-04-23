@@ -568,7 +568,7 @@ export default function Notes() {
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-sub">First mailing ships early summer 2026. Sign up today and lock in your founding member spot.</p>
+        <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today and lock in your founding member spot.</p>
         <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
