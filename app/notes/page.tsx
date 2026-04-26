@@ -601,8 +601,10 @@ export default function Notes() {
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
         <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today and lock in your founding member spot.</p>
-        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-        <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px'}}>
+          <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a>
+        </div>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
