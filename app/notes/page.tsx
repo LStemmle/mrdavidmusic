@@ -141,6 +141,37 @@ export default function Notes() {
 
         .btn-primary:hover { background-color: #a04e2c; }
 
+        .gift-link {
+          display: inline-block;
+          margin-top: 14px;
+          font-size: 13px;
+          color: rgba(250, 243, 232, 0.65);
+          text-decoration: none;
+          border-bottom: 1px solid rgba(250, 243, 232, 0.25);
+          transition: color 0.2s, border-color 0.2s;
+          align-self: flex-start;
+        }
+
+        .gift-link:hover {
+          color: var(--dusty-gold);
+          border-bottom-color: var(--dusty-gold);
+        }
+
+        .gift-link-olive {
+          display: inline-block;
+          margin-top: 14px;
+          font-size: 13px;
+          color: #A8B888;
+          text-decoration: none;
+          border-bottom: 1px solid rgba(168, 184, 136, 0.4);
+          transition: color 0.2s, border-color 0.2s;
+        }
+
+        .gift-link-olive:hover {
+          color: var(--parchment);
+          border-bottom-color: var(--parchment);
+        }
+
         section { padding: 72px 56px; }
 
         .section-label {
@@ -501,6 +532,7 @@ export default function Notes() {
         <div className="hero-center">
           <p className="hero-lede">Join our musical explorer snail mail club. Get monthly letters in your mailbox that boost your musical knowledge and spark your passion. <strong>Adventure awaits.</strong></p>
           <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-primary">Become a Founding Member</a>
+          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a>
         </div>
       </section>
 
@@ -570,6 +602,7 @@ export default function Notes() {
         <div className="section-title">Become a Founding Member</div>
         <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today and lock in your founding member spot.</p>
         <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+        <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a>
         <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
