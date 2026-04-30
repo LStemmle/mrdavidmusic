@@ -28,6 +28,18 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
+        <Script id="memberful-overlay" strategy="afterInteractive">
+          {`
+            (function(c) {
+              var s = document.createElement("script");
+              s.src = "https://js.memberful.com/embed.js";
+              s.onload = function() { Memberful.setup(c) };
+              document.head.appendChild(s);
+            })({
+              site: ["https://mrdavidmusic.memberful.com"]
+            });
+          `}
+        </Script>
         {children}
       </body>
     </html>
