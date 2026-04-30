@@ -30,8 +30,8 @@ export default function Notes() {
 
         body {
           font-family: 'Libre Baskerville', serif;
-          background-color: var(--parchment);
-          color: var(--brown);
+          background-color: var(--terracotta);
+          color: #fff;
         }
 
         nav {
@@ -415,8 +415,8 @@ export default function Notes() {
 
         .btn-waitlist {
           display: inline-block;
-          background-color: var(--parchment);
-          color: var(--brown);
+          background-color: var(--terracotta);
+          color: #fff;
           font-family: 'Libre Baskerville', serif;
           font-size: 15px;
           font-weight: 700;
@@ -429,7 +429,7 @@ export default function Notes() {
           align-self: center;
         }
 
-        .btn-waitlist:hover { background-color: #fff; }
+        .btn-waitlist:hover { background-color: #a04e2c; }
 
         .form-success {
           display: flex;
@@ -568,7 +568,7 @@ export default function Notes() {
 
       <nav>
         <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
-        <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="nav-cta">Become a Founding Member</a>
+        <a href="#waitlist-section" className="nav-cta">Become a Founding Member</a>
       </nav>
 
       <section className="hero">
@@ -577,7 +577,7 @@ export default function Notes() {
         <div className="hero-overlay"></div>
         <div className="hero-center">
           <p className="hero-lede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&apos;re building <strong>a musical snail mail community</strong> for people like you!</p>
-          <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-primary">Become a Founding Member</a>
+          <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
           <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
         </div>
       </section>
