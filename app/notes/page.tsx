@@ -576,7 +576,7 @@ export default function Notes() {
         <img className="hero-photo" src="/for hero/Mr David hero.png" alt="Mr. David's letters on wood" />
         <div className="hero-overlay"></div>
         <div className="hero-center">
-          <p className="hero-lede">Join our musical explorer snail mail club. Get monthly letters in your mailbox that boost your musical knowledge and spark your passion. <strong>Adventure awaits.</strong></p>
+          <p className="hero-lede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&apos;re building <strong>a musical snail mail community</strong> for people like you!</p>
           <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-primary">Become a Founding Member</a>
           <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
         </div>
@@ -588,18 +588,18 @@ export default function Notes() {
         <div className="inside-grid">
           <div className="inside-item">
             <div className="inside-number">01</div>
-            <h3 className="inside-item-title">A letter from Mr. David</h3>
-            <p className="inside-item-desc">David writes the way he teaches, by telling the human stories behind the topic. It might be an instrument with a surprising history, an artist you haven&apos;t heard of yet, or a genre that quietly shaped everything that came after it. By the end you are curious about sounds and songs and artists you never knew to look for.</p>
+            <h3 className="inside-item-title">A letter from David</h3>
+            <p className="inside-item-desc">As a lifelong music enthusiast and teacher, David has been collecting and sharing the musical stories associated with instruments, artists, albums, genres, history, and culture for decades. His monthly letter weaves these stories together around a theme to deliver content that is both informative and entertaining.</p>
           </div>
           <div className="inside-item">
             <div className="inside-number">02</div>
             <h3 className="inside-item-title">A collectible instrument card</h3>
-            <p className="inside-item-desc">Included in the letter is a collectible card: a photograph of a real instrument from Mr. David&apos;s large collection, numbered sequentially, with quick facts on the back. Somewhere in every photo, one of his Beatles figures is hiding. David will tell you that making these cards is a great excuse to keep buying more instruments. His wife may have a different opinion.</p>
+            <p className="inside-item-desc">Over the years, David has collected well over 200 musical instruments, and now he wants to share his instruments with you! Included in the letter is a collectible card featuring an instrument from his collection. Can he play them all, you wonder? Well he sure thinks it&apos;s fun to try!</p>
           </div>
           <div className="inside-item">
             <div className="inside-number">03</div>
             <h3 className="inside-item-title">A curated playlist</h3>
-            <p className="inside-item-desc">David loves introducing his students to music they haven&apos;t heard before. The playlist is his way of doing that at scale: songs to discover, performances worth watching, and context that makes the listening more interesting. He opens with a video about what he picked and what to listen for. A playlist card in the envelope has the QR code so you can start right away.</p>
+            <p className="inside-item-desc">One of David&apos;s favorite things is getting to introduce his students to music they haven&apos;t heard before. Back in the day, he made mixtapes for his friends. Now David does this for his snail mail club, using YouTube to assemble a monthly playlist of songs and performances related to the theme. And he starts it off with a video introduction about what he included and why he thinks it&apos;s great.</p>
           </div>
         </div>
       </section>
@@ -611,17 +611,17 @@ export default function Notes() {
           <div className="step">
             <div className="step-number">1</div>
             <h3 className="step-title">Subscribe</h3>
-            <p className="step-desc">Sign up for $12/month. You can cancel at any time, but why would you want to? Another musical adventure will be coming your way every month!</p>
+            <p className="step-desc">Sign up for $12/month (US) or $14/month (international). You can cancel at any time, but why would you want to? Another musical adventure will be coming your way every month!</p>
           </div>
           <div className="step">
             <div className="step-number">2</div>
             <h3 className="step-title">Get your welcome package</h3>
-            <p className="step-desc">Soon after you join, David will send you a welcome letter telling you all about the music explorer club. He&apos;ll also include a reference card introducing the five instrument families to establish a common vocabulary for his monthly letters.</p>
+            <p className="step-desc">Soon after you join, you will get a welcome letter that tells you all about the club and introduces you to the five instrument families that David will be referencing in his letters and in the collectible cards. He&apos;ll also tell you about the secret hidden Beatles action figures!</p>
           </div>
           <div className="step">
             <div className="step-number">3</div>
-            <h3 className="step-title">Get mail worth opening</h3>
-            <p className="step-desc">Every month a new envelope shows up with a letter full of music history, artist stories, and the kind of context that makes you hear everything differently. The letter also includes a collectible musical instrument card and a playlist that matches that month&apos;s theme.</p>
+            <h3 className="step-title">Check your mailbox!</h3>
+            <p className="step-desc">David will be sending out a new set of stories along with his playlist and instrument card on the first of every month. Go find your comfortable chair, open your letter, and enjoy a lovingly curated set of musical knowledge that will inspire and delight.</p>
           </div>
         </div>
       </section>
@@ -646,12 +646,21 @@ export default function Notes() {
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today and lock in your founding member spot.</p>
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px'}}>
-          <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
+        <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today for yourself or a friend.</p>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px'}}>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
+            <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>
+            <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$12<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
+            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+            <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
+            <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>International</p>
+            <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$14<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
+            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147590&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+            <a href="https://mrdavidmusic.memberful.com/gift?plan=147590" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a>
+          </div>
         </div>
-        <p className="cta-note">Domestic shipping only. International coming soon.</p>
       </section>
 
       <footer>
