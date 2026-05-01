@@ -652,13 +652,13 @@ export default function Notes() {
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$12<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
             <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-            <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
+            <span style={{display: 'inline-flex', alignItems: 'center', gap: '4px'}}><a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span></span>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>International</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$14<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
             <a href="https://mrdavidmusic.memberful.com/checkout?plan=147590&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-            <a href="https://mrdavidmusic.memberful.com/gift?plan=147590" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a>
+            <span style={{display: 'inline-flex', alignItems: 'center', gap: '4px'}}><a href="https://mrdavidmusic.memberful.com/gift?plan=147590" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span></span>
           </div>
         </div>
       </section>
