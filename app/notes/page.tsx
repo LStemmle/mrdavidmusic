@@ -675,8 +675,8 @@ export default function Notes() {
 
       <LaunchBanner />
       <nav>
-        <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
-        <a href="#waitlist-section" className="nav-cta">Become a Founding Member</a>
+        <Link href="/" className="nav-back">&larr; Home</Link>
+        <a href="#waitlist-section" className="nav-cta">Join Us</a>
       </nav>
 
       <section className="hero">
