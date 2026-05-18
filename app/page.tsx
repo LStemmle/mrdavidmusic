@@ -72,7 +72,7 @@ export default function Home() {
           bottom: 0;
           width: 62%;
           background-color: #2a2218;
-          background-image: url('/for hero/64-DSC_1186.jpg');
+          background-image: url('/for-hero/64-DSC_1186.jpg');
           background-size: cover;
           background-position: center top;
         }

@@ -532,7 +532,7 @@ export default function Lessons() {
 
           <div className="offering-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="offering-card-photo" src="/for hero/recital.jpg" alt="Studio recital performance" style={{objectPosition: "center 60%"}} />
+            <img className="offering-card-photo" src="/for-hero/recital.jpg" alt="Studio recital performance" style={{objectPosition: "center 60%"}} />
             <div className="offering-card-body">
               <div className="offering-number">03</div>
               <h3 className="offering-title">Studio Recitals</h3>
@@ -562,7 +562,7 @@ export default function Lessons() {
 
           <div className="offering-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="offering-card-photo" src="/for hero/texture photos/PXL_20260411_000155867.MP.jpg" alt="Synthesizer controls" style={{objectPosition: "center 50%"}} />
+            <img className="offering-card-photo" src="/for-hero/texture photos/PXL_20260411_000155867.MP.jpg" alt="Synthesizer controls" style={{objectPosition: "center 50%"}} />
             <div className="offering-card-body">
               <div className="offering-number">06</div>
               <h3 className="offering-title">Music Production</h3>

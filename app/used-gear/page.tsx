@@ -438,7 +438,7 @@ export default function UsedGear() {
 
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-photo" src="/for hero/bullseye store photos/PXL_20260205_180333594.jpg" alt="BullsEye Music used gear shop" />
+        <img className="hero-photo" src="/for-hero/bullseye store photos/PXL_20260205_180333594.jpg" alt="BullsEye Music used gear shop" />
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-eyebrow">used gear</div>
@@ -455,7 +455,7 @@ export default function UsedGear() {
           <p className="intro-desc">The inventory changes and you won&apos;t find it listed online. The best way to know what&apos;s in stock is to stop by.</p>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="intro-photo" src="/for hero/bullseye store photos/PXL_20260220_230519492.MP.jpg" alt="BullsEye Music at Classic Treasures" />
+        <img className="intro-photo" src="/for-hero/bullseye store photos/PXL_20260220_230519492.MP.jpg" alt="BullsEye Music at Classic Treasures" />
       </section>
 
       <section className="inventory">

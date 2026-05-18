@@ -405,7 +405,7 @@ export default function Recordings() {
 
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-photo" src="/for hero/texture photos/recordings.jpg" alt="Reckless Martin" />
+        <img className="hero-photo" src="/for-hero/texture photos/recordings.jpg" alt="Reckless Martin" />
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-eyebrow" style={{fontSize: 28}}>recordings and performances</div>
@@ -417,7 +417,7 @@ export default function Recordings() {
       <section className="album">
         <div className="album-layout">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="album-art" src="/for hero/mute-album-art.jpg" alt="MUTE album art" />
+          <img className="album-art" src="/for-hero/mute-album-art.jpg" alt="MUTE album art" />
 
           <div className="album-info">
             <div className="album-meta">Reckless Martin &nbsp;&middot;&nbsp; 9 tracks &nbsp;&middot;&nbsp; Released March 2023</div>

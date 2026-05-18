@@ -681,7 +681,7 @@ export default function Notes() {
 
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-photo" src="/for%20hero/Mr%20David%20hero.png" alt="Mr. David's letters on wood" />
+        <img className="hero-photo" src="/for-hero/Mr%20David%20hero.png" alt="Mr. David's letters on wood" />
         <div className="hero-overlay"></div>
         <div className="hero-center">
           <p className="hero-lede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&apos;re building <strong>a musical snail mail community</strong> for people like you!</p>
@@ -742,7 +742,7 @@ export default function Notes() {
 
       <section className="meet">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="meet-img" src="/for%20hero/IMG_0568.jpg" alt="Mr. David at Penny Lane, Liverpool" />
+        <img className="meet-img" src="/for-hero/IMG_0568.jpg" alt="Mr. David at Penny Lane, Liverpool" />
         <div className="meet-text">
           <div className="section-label">Who&apos;s sending this</div>
           <h2 className="section-title">Meet Mr. David</h2>
