@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Preview — Notes from Mr. David</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --parchment: #FAF3E8;
+      --amber: #C8842A;
+      --terracotta: #B85C38;
+      --brown: #3E2723;
+      --dusty-gold: #D4A84B;
+      --light-tan: #E8D5B5;
+      --warm-gray: #7A6E5D;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 16px;
+    }
+
+    .note {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 13px;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      min-height: 520px;
+      padding: 64px 56px;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 3px solid var(--light-tan);
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(20,10,5,0.92) 0%,
+        rgba(20,10,5,0.85) 40%,
+        rgba(20,10,5,0.30) 65%,
+        rgba(20,10,5,0.05) 100%
+      );
+    }
+
+    .hero-center {
+      position: relative;
+      z-index: 2;
+      max-width: 58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-lede {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.55;
+      color: var(--parchment);
+      margin-bottom: 24px;
+    }
+
+    .hero-lede strong {
+      font-weight: 700;
+      color: var(--dusty-gold);
+      font-style: normal;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--terracotta);
+      color: #fff;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 14px;
+      padding: 14px 36px;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      align-self: flex-start;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover { background-color: #a04e2c; }
+
+    .gift-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(250, 243, 232, 0.65);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(250, 243, 232, 0.25);
+      align-self: flex-start;
+    }
+
+    /* ── SIZE CONTROLS ── */
+    .controls {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .controls label { display: flex; align-items: center; gap: 8px; }
+    .controls input[type=range] { width: 120px; }
+    .controls span { min-width: 36px; color: #fff; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <p class="note">Resize your browser window to see how it responds at different widths.</p>
+
+  <div class="controls">
+    <label>
+      Font size
+      <input type="range" min="18" max="42" value="32" id="fontSize" />
+      <span id="fontSizeVal">32px</span>
+    </label>
+    <label>
+      Text width
+      <input type="range" min="40" max="80" value="58" id="textWidth" />
+      <span id="textWidthVal">58%</span>
+    </label>
+  </div>
+
+  <section class="hero">
+    <img class="hero-photo" src="public/for hero/Mr David hero.png" alt="Mr. David's letters on wood" />
+    <div class="hero-overlay"></div>
+    <div class="hero-center" id="heroCenter">
+      <p class="hero-lede" id="heroLede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&rsquo;re building <strong>a musical snail mail community</strong> for people like you!</p>
+      <a href="#" class="btn-primary">Become a Founding Member</a>
+      <a href="#" class="gift-link">Give a gift subscription &rarr;</a>
+    </div>
+  </section>
+
+  <script>
+    const fontSlider = document.getElementById('fontSize');
+    const fontVal = document.getElementById('fontSizeVal');
+    const widthSlider = document.getElementById('textWidth');
+    const widthVal = document.getElementById('textWidthVal');
+    const lede = document.getElementById('heroLede');
+    const center = document.getElementById('heroCenter');
+
+    fontSlider.addEventListener('input', () => {
+      lede.style.fontSize = fontSlider.value + 'px';
+      fontVal.textContent = fontSlider.value + 'px';
+    });
+
+    widthSlider.addEventListener('input', () => {
+      center.style.maxWidth = widthSlider.value + '%';
+      widthVal.textContent = widthSlider.value + '%';
+    });
+  </script>
+</body>
+</html>

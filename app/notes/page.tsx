@@ -96,32 +96,33 @@ export default function Notes() {
         .hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to right, rgba(20,10,5,0.88) 0%, rgba(20,10,5,0.72) 55%, rgba(20,10,5,0.45) 100%);
+          background: linear-gradient(to right, rgba(20,10,5,0.92) 0%, rgba(20,10,5,0.85) 40%, rgba(20,10,5,0.30) 65%, rgba(20,10,5,0.05) 100%);
         }
 
         .hero-center {
           position: relative;
           z-index: 2;
           min-width: 0;
+          max-width: 62%;
           display: flex;
           flex-direction: column;
           justify-content: center;
         }
 
         .hero-lede {
-          font-family: 'Lora', serif;
-          font-size: 34px;
-          font-style: italic;
+          font-family: 'Libre Baskerville', serif;
+          font-size: 32px;
+          font-style: normal;
           font-weight: 700;
-          line-height: 1.45;
+          line-height: 1.55;
           color: var(--parchment);
           margin-bottom: 20px;
         }
 
         .hero-lede strong {
-          font-weight: 900;
+          font-weight: 700;
           color: var(--dusty-gold);
-          font-style: italic;
+          font-style: normal;
         }
 
         .btn-primary {
@@ -581,9 +582,13 @@ export default function Notes() {
             padding: 48px 24px;
           }
 
+          .hero-center {
+            max-width: 100%;
+          }
+
           .hero-lede {
             font-size: 22px;
-            line-height: 1.5;
+            line-height: 1.55;
           }
 
           section {
