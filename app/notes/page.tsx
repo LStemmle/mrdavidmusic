@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { LaunchBanner, LaunchCtaSubtext } from "./LaunchBanner";
 
 
 export const metadata: Metadata = {
@@ -14,6 +15,17 @@ export default function Notes() {
 
         html { scroll-behavior: smooth; }
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        .announcement-bar {
+          background-color: var(--amber);
+          color: var(--brown);
+          font-family: 'Libre Baskerville', serif;
+          font-size: 13px;
+          font-weight: 700;
+          text-align: center;
+          padding: 10px 24px;
+          letter-spacing: 0.02em;
+        }
 
         :root {
           --parchment: #FAF3E8;
@@ -661,6 +673,7 @@ export default function Notes() {
         }
       `}</style>
 
+      <LaunchBanner />
       <nav>
         <Link href="/" className="nav-back">&larr; mrdavidmusic.com</Link>
         <a href="#waitlist-section" className="nav-cta">Become a Founding Member</a>
@@ -761,7 +774,7 @@ export default function Notes() {
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-sub">First mailing ships July 1, 2026. Sign up today for yourself or a friend.</p>
+        <LaunchCtaSubtext />
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>
