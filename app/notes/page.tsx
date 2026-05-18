@@ -673,7 +673,7 @@ export default function Notes() {
         <div className="hero-center">
           <p className="hero-lede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&apos;re building <strong>a musical snail mail community</strong> for people like you!</p>
           <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
-          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span>
+          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a>
         </div>
       </section>
 
