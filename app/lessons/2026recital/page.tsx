@@ -24,7 +24,7 @@ const songs = [
   {
     title: "Nowhere Man / Girl",
     artist: "The Beatles",
-    notes: `These are both excellent guitar songs off of Rubber Soul, an album we performed in its entirety back in 2019. Since then, these two songs have become recital favorites. I especially love the double guitar solo at the end of Girl!`,
+    notes: `In 1965 The Beatles released Rubber Soul and ushered in a new era of studio innovation and creativity, raising the bar for what rock music could be. Brian Wilson of the Beach Boys was inspired, and poured that energy into Pet Sounds. This back and forth rivalry is the stuff of rock legend — we'll see a few more chapters in this saga later in the show. We were so inspired by Rubber Soul that we covered the whole album back in 2019! This is a great pair of songs from the record — I especially love the double guitar solo at the end of Girl.`,
   },
   {
     title: "Love Song / Boys Don't Cry",
@@ -69,7 +69,7 @@ const songs = [
   {
     title: "Wouldn't It Be Nice / God Only Knows",
     artist: "The Beach Boys",
-    notes: `These are both standout tracks from the perfect 1966 album Pet Sounds. There are zero silly surfing songs on this album. Instead, you have one of the best and earliest examples of using the studio as an instrument. The Beach Boys themselves don't play the instruments on the record — instead they used a professional studio band in LA nicknamed The Wrecking Crew, full of amazing and legendary talent. This album also represents the back-and-forth competition between the Beach Boys and the Beatles in the mid '60s. Pet Sounds was seen as a response to Rubber Soul, and Revolver a response to Pet Sounds. Before Brian Wilson could write and record his response to Revolver, the Beatles dropped Sergeant Pepper and Brian kind of lost his mind.`,
+    notes: `These are both standout tracks from the perfect 1966 album Pet Sounds. There are zero silly surfing songs on this album. Instead, you have one of the best and earliest examples of using the studio as an instrument. Interestingly, the Beach Boys themselves didn't play the instruments on the record — instead they used a professional studio band in LA nicknamed The Wrecking Crew, full of amazing and legendary talent like bassist Carol Kaye and drummer Hal Blaine. This album is the next chapter in that Beach Boys / Beatles rivalry in the mid '60s. Pet Sounds was seen as a response to Rubber Soul, and the Beatles countered with their 1966 release Revolver. Before Brian Wilson could write and record his response, Smile, the Beatles dropped Sergeant Pepper and Brian kind of lost his mind and couldn't finish the album. He later returned to the project and finally released Smile in 2004.`,
   },
   {
     title: "Lucy in the Sky with Diamonds / Getting Better",
