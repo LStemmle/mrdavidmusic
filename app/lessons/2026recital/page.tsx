@@ -238,6 +238,55 @@ export default function Recital2026() {
           white-space: pre-line;
         }
 
+        .intro {
+          max-width: 820px;
+          margin: 0 auto;
+          padding: 64px 56px 0;
+        }
+
+        .intro-greeting {
+          font-family: 'Playfair Display', serif;
+          font-weight: 700;
+          font-size: 26px;
+          color: var(--dark);
+          margin-bottom: 24px;
+        }
+
+        .intro-body {
+          font-size: 16px;
+          line-height: 1.9;
+          color: var(--body);
+        }
+
+        .intro-body p {
+          margin-bottom: 20px;
+        }
+
+        .intro-body p:last-child {
+          margin-bottom: 0;
+        }
+
+        .intro-body a {
+          color: var(--orange);
+          text-decoration: none;
+        }
+
+        .intro-body a:hover {
+          text-decoration: underline;
+        }
+
+        .intro-divider {
+          border: none;
+          border-top: 2px solid var(--border);
+          margin: 48px 0 0;
+        }
+
+        @media (max-width: 768px) {
+          .intro {
+            padding: 40px 24px 0;
+          }
+        }
+
         footer {
           background-color: #0E0C0A;
           padding: 28px 56px;
@@ -306,6 +355,17 @@ export default function Recital2026() {
         <div className="header-eyebrow">Program Notes</div>
         <h1 className="header-title">Spring 2026 Recital</h1>
         <p className="header-sub">Notes from David on each piece in tonight&apos;s program.</p>
+      </div>
+
+      <div className="intro">
+        <div className="intro-greeting">Hello Musical Friends!</div>
+        <div className="intro-body">
+          <p>Welcome to our semi-annual studio showcase! We have had a fun time learning a great collection of songs to present tonight. We started off thinking about doing an album project like we have the last few years (OK Computer, and Dark Side of the Moon), but ultimately decided to present a sampling from all the albums that we considered. Below I have written some program notes to provide a little extra context about each song and album featured in the set list.</p>
+          <p>This is the senior recital for some of our performers tonight. Ali Otto, since 2018; Eli Kraskin, since 2019; and Atticus Silver, since 2025. Please give them and the whole studio your best tonight!</p>
+          <p>I also wanted to take a second to say thanks to all of you for your support through the years — supporting this great group of students, this teaching studio, and music and arts in general. It is more important than ever to keep &quot;real people&quot; arts alive and kicking!</p>
+          <p>A specific thanks to Julian Brown, who has been the bass teacher these last six months. He has done an amazing job, and you will see that tonight! Thanks to Sammy for dress rehearsal pizza! Thanks to Sarah Harlan aka &quot;The Gatekeeper&quot; for her stage management / cat herding magic. Thanks to Misha Angrist for supporting and participating with this studio for over a decade! Thanks to Blade Addison for partnering in Bullseye Music at <a href="https://mrdavidmusic.com/used-gear" target="_blank" rel="noopener noreferrer">Classic Treasures</a>. Thanks to Chris Rossi and DUSKY Electronics for allowing us to use his amazing new amplifier — the amp is in preproduction and they are taking orders now at <a href="https://duskyamp.com/models/" target="_blank" rel="noopener noreferrer">duskyamp.com</a>. And thanks to my wonderful family / house band: Laura, Nate, and Ben!</p>
+        </div>
+        <hr className="intro-divider" />
       </div>
 
       <div className="program">
