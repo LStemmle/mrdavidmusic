@@ -682,7 +682,6 @@ export default function Notes() {
         }
       `}</style>
 
-      <LaunchBanner />
       <nav>
         <Link href="/" className="nav-back">&larr; Home</Link>
         <a href="#waitlist-section" className="nav-cta">Join Us</a>
