@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { LaunchBanner, LaunchCtaSubtext } from "./LaunchBanner";
+import { TestimonialCarousel } from "./TestimonialCarousel";
 
 
 export const metadata: Metadata = {
@@ -111,7 +112,7 @@ export default function Notes() {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: center 30%;
+          object-position: center top;
         }
 
         .hero-overlay {
@@ -144,6 +145,14 @@ export default function Notes() {
           font-weight: 700;
           color: var(--dusty-gold);
           font-style: normal;
+        }
+
+        .hero-lede-sub {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.6;
+          margin-top: 4px;
+          margin-bottom: 28px;
         }
 
         .btn-primary {
@@ -292,6 +301,129 @@ export default function Notes() {
           font-size: 15px;
           line-height: 1.85;
           color: var(--warm-gray);
+        }
+
+        .testimonials {
+          background-color: var(--parchment);
+          border-top: 1px solid rgba(62, 39, 35, 0.08);
+          text-align: center;
+        }
+
+        .testimonials .section-label { color: var(--amber); }
+        .testimonials .section-title { margin-bottom: 36px; }
+
+        .testimonial-carousel {
+          position: relative;
+          max-width: 820px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 48px 1fr 48px;
+          gap: 16px;
+          align-items: center;
+        }
+
+        .testimonial-card {
+          background-color: #fff;
+          border: 1px solid rgba(200, 132, 42, 0.25);
+          border-top: 4px solid var(--amber);
+          padding: 40px 44px 36px;
+          min-height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          box-shadow: 0 6px 24px rgba(62, 39, 35, 0.08);
+          animation: testimonial-fade 0.45s ease;
+        }
+
+        @keyframes testimonial-fade {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        .testimonial-quote-mark {
+          font-family: 'Abril Fatface', serif;
+          font-size: 64px;
+          line-height: 0.7;
+          color: var(--amber);
+          opacity: 0.55;
+          margin-bottom: 14px;
+        }
+
+        .testimonial-quote {
+          font-family: 'Playfair Display', serif;
+          font-size: 20px;
+          font-style: italic;
+          line-height: 1.65;
+          color: var(--brown);
+          margin-bottom: 22px;
+          max-width: 620px;
+        }
+
+        .testimonial-attr {
+          font-family: 'Caveat', cursive;
+          font-size: 24px;
+          color: var(--amber);
+          font-weight: 600;
+        }
+
+        .testimonial-arrow {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 1px solid rgba(62, 39, 35, 0.25);
+          background-color: #fff;
+          color: var(--brown);
+          font-size: 32px;
+          line-height: 1;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 0 4px;
+          transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+        }
+
+        .testimonial-arrow:hover {
+          background-color: var(--amber);
+          color: #fff;
+          border-color: var(--amber);
+        }
+
+        .testimonial-arrow:focus-visible {
+          outline: 2px solid var(--amber);
+          outline-offset: 3px;
+        }
+
+        .testimonial-dots {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 28px;
+        }
+
+        .testimonial-dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: none;
+          background-color: rgba(62, 39, 35, 0.22);
+          cursor: pointer;
+          padding: 0;
+          transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .testimonial-dot:hover { background-color: rgba(62, 39, 35, 0.4); }
+
+        .testimonial-dot.is-active {
+          background-color: var(--amber);
+          transform: scale(1.2);
+        }
+
+        .testimonial-dot:focus-visible {
+          outline: 2px solid var(--amber);
+          outline-offset: 3px;
         }
 
         .how { background-color: var(--parchment-dark); }
@@ -612,8 +744,33 @@ export default function Notes() {
             line-height: 1.55;
           }
 
+          .hero-lede-sub {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+
           section {
             padding: 48px 24px;
+          }
+
+          .testimonial-carousel {
+            grid-template-columns: 36px 1fr 36px;
+            gap: 8px;
+          }
+
+          .testimonial-card {
+            padding: 32px 22px 28px;
+            min-height: 260px;
+          }
+
+          .testimonial-quote {
+            font-size: 17px;
+          }
+
+          .testimonial-arrow {
+            width: 36px;
+            height: 36px;
+            font-size: 24px;
           }
 
           .section-title {
@@ -689,10 +846,16 @@ export default function Notes() {
 
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero-photo" src="/for-hero/Mr%20David%20hero.png" alt="Mr. David's letters on wood" />
+        <img className="hero-photo" src="/david-with-guitars-web.jpg" alt="David with his guitars" />
         <div className="hero-overlay"></div>
         <div className="hero-center">
-          <p className="hero-lede">Do you love learning about and discovering new music? Do you love getting fun mail in your mailbox? We&apos;re building <strong>a musical snail mail community</strong> for people like you!</p>
+          <p className="hero-lede">
+            <span style={{color: '#fff'}}>Every month, something arrives in the mailbox that makes your kid </span>
+            <span style={{color: '#C8842A'}}>light up about music.</span>
+          </p>
+          <p className="hero-lede hero-lede-sub">
+            <span style={{color: '#fff'}}>No pressure. No practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible to kids.</span>
+          </p>
           <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
           <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a>
         </div>
@@ -719,6 +882,8 @@ export default function Notes() {
           </div>
         </div>
       </section>
+
+      <TestimonialCarousel />
 
       <section className="how">
         <div className="section-label">Getting started</div>

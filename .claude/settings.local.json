@@ -28,7 +28,15 @@
       "Bash(python3 -c \":*)",
       "WebSearch",
       "WebFetch(domain:opennext.js.org)",
-      "WebFetch(domain:answers.netlify.com)"
+      "WebFetch(domain:answers.netlify.com)",
+      "Bash(npx --no-install next build)",
+      "Bash(npx --no-install next dev -p 3045)",
+      "Bash(curl -sf -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3045/notes)",
+      "Bash(pkill -f \"next dev -p 3045\")",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/Desktop/\"Notes from Mr. David\"/\"Music website\"/public/david-with-guitars.jpg)",
+      "Bash(sips -Z 1800 -s format jpeg -s formatOptions 80 '/Users/davidstemmle/Desktop/Notes from Mr. David/Music website/public/david-with-guitars.jpg' --out '/Users/davidstemmle/Desktop/Notes from Mr. David/Music website/public/david-with-guitars-web.jpg')",
+      "Bash(command -v cwebp)",
+      "Bash(cwebp -version)"
     ]
   }
 }
