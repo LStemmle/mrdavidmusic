@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
-import { LaunchBanner, LaunchCtaSubtext } from "./LaunchBanner";
 import { TestimonialCarousel } from "./TestimonialCarousel";
 
 
 export const metadata: Metadata = {
-  title: "Notes from Mr. David",
+  title: "Notes from Mr. David | Monthly Musical Snail Mail Club",
+  description:
+    "A monthly musical snail mail club for kids and families. Stories, a collectible instrument card, and a curated playlist from Mr. David.",
 };
 
 export default function Notes() {
@@ -95,7 +96,7 @@ export default function Notes() {
 
         .hero {
           position: relative;
-          background-color: var(--brown);
+          background-color: #1C0F0C;
           min-height: 520px;
           padding: 64px 56px;
           display: grid;
@@ -108,17 +109,31 @@ export default function Notes() {
 
         .hero-photo {
           position: absolute;
-          inset: 0;
-          width: 100%;
+          top: 0;
+          right: 0;
+          width: 55%;
           height: 100%;
           object-fit: cover;
           object-position: center top;
         }
 
+        @media (max-width: 900px) {
+          .hero-photo {
+            width: 65%;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .hero-photo {
+            width: 100%;
+            opacity: 0.35;
+          }
+        }
+
         .hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to right, rgba(20,10,5,0.92) 0%, rgba(20,10,5,0.85) 40%, rgba(20,10,5,0.30) 65%, rgba(20,10,5,0.05) 100%);
+          background: linear-gradient(to right, #1C0F0C 0%, #1C0F0C 44%, rgba(28,15,12,0) 67%);
         }
 
         .hero-center {
@@ -172,83 +187,6 @@ export default function Notes() {
 
         .btn-primary:hover { background-color: #a04e2c; }
 
-        .gift-link {
-          display: inline-block;
-          margin-top: 14px;
-          font-size: 13px;
-          color: rgba(250, 243, 232, 0.65);
-          text-decoration: none;
-          border-bottom: 1px solid rgba(250, 243, 232, 0.25);
-          transition: color 0.2s, border-color 0.2s;
-          align-self: flex-start;
-        }
-
-        .gift-link:hover {
-          color: var(--dusty-gold);
-          border-bottom-color: var(--dusty-gold);
-        }
-
-        .gift-link-olive {
-          display: inline-block;
-          margin-top: 14px;
-          font-size: 13px;
-          color: #A8B888;
-          text-decoration: none;
-          border-bottom: 1px solid rgba(168, 184, 136, 0.4);
-          transition: color 0.2s, border-color 0.2s;
-        }
-
-        .gift-link-olive:hover {
-          color: var(--parchment);
-          border-bottom-color: var(--parchment);
-        }
-
-        .tooltip-wrap {
-          position: relative;
-          display: inline-block;
-          margin-left: 5px;
-          cursor: default;
-          font-size: 11px;
-          color: rgba(168, 184, 136, 0.7);
-          vertical-align: middle;
-        }
-
-        .tooltip-wrap .tooltip-text {
-          visibility: hidden;
-          opacity: 0;
-          background-color: var(--brown);
-          color: var(--parchment);
-          font-size: 12px;
-          font-style: normal;
-          line-height: 1.5;
-          text-align: center;
-          padding: 8px 12px;
-          border-radius: 4px;
-          width: 220px;
-          position: absolute;
-          bottom: 130%;
-          left: 50%;
-          transform: translateX(-50%);
-          transition: opacity 0.2s;
-          pointer-events: none;
-          z-index: 10;
-        }
-
-        .tooltip-wrap .tooltip-text::after {
-          content: '';
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          border: 5px solid transparent;
-          border-top-color: var(--brown);
-        }
-
-        .tooltip-wrap:hover .tooltip-text {
-          visibility: visible;
-          opacity: 1;
-        }
-
         section { padding: 72px 56px; }
 
         .section-label {
@@ -275,10 +213,24 @@ export default function Notes() {
 
         .inside { background-color: var(--parchment); }
 
-        .inside-grid {
+        .inside-layout {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 48px;
+          grid-template-columns: 1fr 1fr;
+          gap: 72px;
+          align-items: center;
+        }
+
+        .inside-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .inside-img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
+          box-shadow: 0 8px 32px rgba(62,39,35,0.12);
         }
 
         .inside-number {
@@ -426,12 +378,53 @@ export default function Notes() {
           outline-offset: 3px;
         }
 
+        .gift-cta {
+          background-color: var(--light-tan);
+          text-align: center;
+        }
+
+        .gift-cta-inner {
+          max-width: 720px;
+          margin: 0 auto;
+        }
+
+        .gift-cta .section-title {
+          color: var(--brown);
+          margin-bottom: 24px;
+        }
+
+        .gift-cta-sub {
+          font-size: 17px;
+          line-height: 1.8;
+          color: var(--brown);
+          opacity: 0.8;
+          margin-bottom: 36px;
+        }
+
+        .btn-gift {
+          display: inline-block;
+          background-color: var(--olive);
+          color: #fff;
+          font-family: 'Libre Baskerville', serif;
+          font-size: 15px;
+          font-weight: 700;
+          padding: 16px 44px;
+          border: none;
+          cursor: pointer;
+          letter-spacing: 0.06em;
+          text-decoration: none;
+          transition: background-color 0.2s;
+        }
+
+        .btn-gift:hover { background-color: #3F471F; }
+
         .how { background-color: var(--parchment-dark); }
 
         .steps {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 48px;
+          align-items: start;
         }
 
         .step-number { display: none; }
@@ -512,6 +505,13 @@ export default function Notes() {
         }
 
         .final-cta .section-title { color: var(--parchment); margin-bottom: 16px; }
+
+        .final-cta-tagline {
+          font-size: 18px;
+          color: var(--parchment);
+          margin-bottom: 44px;
+          line-height: 1.6;
+        }
 
         .final-cta-sub {
           font-size: 17px;
@@ -737,6 +737,8 @@ export default function Notes() {
 
           .hero-center {
             max-width: 100%;
+            position: relative;
+            z-index: 3;
           }
 
           .hero-lede {
@@ -778,9 +780,13 @@ export default function Notes() {
             margin-bottom: 32px;
           }
 
-          .inside-grid {
+          .inside-layout {
             grid-template-columns: 1fr;
-            gap: 36px;
+            gap: 40px;
+          }
+
+          .inside-grid {
+            gap: 32px;
           }
 
           .inside-number {
@@ -854,36 +860,47 @@ export default function Notes() {
             <span style={{color: '#C8842A'}}>light up about music.</span>
           </p>
           <p className="hero-lede hero-lede-sub">
-            <span style={{color: '#fff'}}>No pressure. No practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible to kids.</span>
+            <span style={{color: '#fff'}}>No pressure or practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible to kids.</span>
           </p>
           <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
-          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link">Give a gift subscription &rarr;</a>
         </div>
       </section>
 
       <section className="inside">
         <div className="section-label">Every month</div>
         <h2 className="section-title">What&apos;s in the envelope</h2>
-        <div className="inside-grid">
-          <div className="inside-item">
-            <div className="inside-number">01</div>
-            <h3 className="inside-item-title">A letter from David</h3>
-            <p className="inside-item-desc">As a lifelong music enthusiast and teacher, David has been collecting and sharing the musical stories associated with instruments, artists, albums, genres, history, and culture for decades. His monthly letter weaves these stories together around a theme to deliver content that is both informative and entertaining.</p>
+        <div className="inside-layout">
+          <div className="inside-grid">
+            <div className="inside-item">
+              <div className="inside-number">01</div>
+              <h3 className="inside-item-title">A letter from David</h3>
+              <p className="inside-item-desc">David&apos;s first letter is a welcome to the club. He&apos;ll introduce you to the five instrument families and link you to the first playlist featuring beautiful examples of music from each family.</p>
+            </div>
+            <div className="inside-item">
+              <div className="inside-number">02</div>
+              <h3 className="inside-item-title">A collectible instrument card</h3>
+              <p className="inside-item-desc">Each card features an instrument from David&apos;s personal collection, with facts on the back and a hidden secret: somewhere on every card, a Beatles figurine is tucked near the instrument. Each Beatle represents one of the five instrument families. Collect them all and watch out for the Blue Meanie.</p>
+            </div>
+            <div className="inside-item">
+              <div className="inside-number">03</div>
+              <h3 className="inside-item-title">A curated playlist</h3>
+              <p className="inside-item-desc">Back in the day, David made mixtapes for his friends. Now he does it for the club. Each month he assembles a YouTube playlist around the letter&apos;s theme, then records a short intro video where he walks you through each song, what he loves about it, and what to listen for.</p>
+            </div>
           </div>
-          <div className="inside-item">
-            <div className="inside-number">02</div>
-            <h3 className="inside-item-title">A collectible instrument card</h3>
-            <p className="inside-item-desc">Over the years, David has collected well over 200 musical instruments, and now he wants to share his instruments with you! Included in the letter is a collectible card featuring an instrument from his collection. Can he play them all, you wonder? Well he sure thinks it&apos;s fun to try!</p>
-          </div>
-          <div className="inside-item">
-            <div className="inside-number">03</div>
-            <h3 className="inside-item-title">A curated playlist</h3>
-            <p className="inside-item-desc">One of David&apos;s favorite things is getting to introduce his students to music they haven&apos;t heard before. Back in the day, he made mixtapes for his friends. Now David does this for his snail mail club, using YouTube to assemble a monthly playlist of songs and performances related to the theme. And he starts it off with a video introduction about what he included and why he thinks it&apos;s great.</p>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="inside-img" src="/envelope-contents-cropped.jpg" alt="A letter, instrument card, and other contents from a Notes from Mr. David envelope" />
         </div>
       </section>
 
       <TestimonialCarousel />
+
+      <section className="gift-cta">
+        <div className="gift-cta-inner">
+          <h2 className="section-title">Know a kid who loves music?</h2>
+          <p className="gift-cta-sub">Give them the gift they&apos;ll look forward to every month. An entertaining letter in the mailbox, a collectible instrument card, and a playlist full of amazing music that they probably haven&apos;t heard before. No batteries, no screen time, no assembly required.</p>
+          <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="btn-gift">Give a gift subscription</a>
+        </div>
+      </section>
 
       <section className="how">
         <div className="section-label">Getting started</div>
@@ -902,7 +919,7 @@ export default function Notes() {
           <div className="step">
             <div className="step-number">3</div>
             <h3 className="step-title">Check your mailbox!</h3>
-            <p className="step-desc">David will be sending out a new set of stories along with his playlist and instrument card on the first of every month. Go find your comfortable chair, open your letter, and enjoy a lovingly curated set of musical knowledge that will inspire and delight.</p>
+            <p className="step-desc">Open the envelope and you&apos;ll find a letter full of music stories: featured artists, instruments, albums, and history woven around a monthly theme. Scan the playlist card to start the music while you read. And add the instrument card to your growing collection.</p>
           </div>
         </div>
       </section>
@@ -942,24 +959,26 @@ export default function Notes() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             Notes from Mr. David
           </a>
+          <a href="https://youtube.com/playlist?list=PL2w1TmHDI_Ptbwm5DLzPp96ts9Ek1pJbp&si=_g3kqLFDC5QdUSwW" target="_blank" rel="noopener noreferrer" className="social-follow-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Watch the playlist
+          </a>
         </div>
       </section>
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Become a Founding Member</div>
-        <LaunchCtaSubtext />
+        <p className="final-cta-tagline">First letters go out July 1.</p>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$12<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
             <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-            <span style={{display: 'inline-flex', alignItems: 'center', gap: '4px'}}><a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span></span>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>International</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$14<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
             <a href="https://mrdavidmusic.memberful.com/checkout?plan=147590&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
-            <span style={{display: 'inline-flex', alignItems: 'center', gap: '4px'}}><a href="https://mrdavidmusic.memberful.com/gift?plan=147590" target="_blank" rel="noopener noreferrer" className="gift-link-olive">Give a gift subscription &rarr;</a><span className="tooltip-wrap">ⓘ<span className="tooltip-text">The delivery date is when your recipient gets their gift email, not when physical mailings begin.</span></span></span>
           </div>
         </div>
       </section>

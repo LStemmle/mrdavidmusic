@@ -58,8 +58,7 @@ export function TestimonialCarousel() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="section-label">From families</div>
-      <h2 className="section-title">What students &amp; parents say</h2>
+      <h2 className="section-title">Hear from the community.</h2>
       <div className="testimonial-carousel">
         <button
           type="button"
