@@ -215,9 +215,9 @@ export default function Notes() {
 
         .inside-layout {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 65fr 35fr;
           gap: 72px;
-          align-items: center;
+          align-items: stretch;
         }
 
         .inside-grid {
@@ -228,17 +228,10 @@ export default function Notes() {
 
         .inside-img {
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
           border-radius: 4px;
           box-shadow: 0 8px 32px rgba(62,39,35,0.12);
-        }
-
-        .inside-number {
-          font-family: 'Abril Fatface', serif;
-          font-size: 56px;
-          color: var(--light-tan);
-          line-height: 1;
-          margin-bottom: 10px;
         }
 
         .inside-item-title {
@@ -256,8 +249,7 @@ export default function Notes() {
         }
 
         .testimonials {
-          background-color: var(--parchment);
-          border-top: 1px solid rgba(62, 39, 35, 0.08);
+          background-color: var(--parchment-dark);
           text-align: center;
         }
 
@@ -785,12 +777,14 @@ export default function Notes() {
             gap: 40px;
           }
 
-          .inside-grid {
-            gap: 32px;
+          .inside-img {
+            order: -1;
+            height: auto;
+            max-height: 360px;
           }
 
-          .inside-number {
-            font-size: 40px;
+          .inside-grid {
+            gap: 32px;
           }
 
           .steps {
@@ -856,11 +850,11 @@ export default function Notes() {
         <div className="hero-overlay"></div>
         <div className="hero-center">
           <p className="hero-lede">
-            <span style={{color: '#fff'}}>Every month, something arrives in the mailbox that makes your kid </span>
-            <span style={{color: '#C8842A'}}>light up about music.</span>
+            <span style={{color: '#fff'}}>Every month, something arrives in the mailbox that makes the world </span>
+            <span style={{color: '#C8842A'}}>sound more interesting.</span>
           </p>
           <p className="hero-lede hero-lede-sub">
-            <span style={{color: '#fff'}}>No pressure or practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible to kids.</span>
+            <span style={{color: '#fff'}}>No pressure or practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible.</span>
           </p>
           <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
         </div>
@@ -872,17 +866,14 @@ export default function Notes() {
         <div className="inside-layout">
           <div className="inside-grid">
             <div className="inside-item">
-              <div className="inside-number">01</div>
               <h3 className="inside-item-title">A letter from David</h3>
               <p className="inside-item-desc">David&apos;s first letter is a welcome to the club. He&apos;ll introduce you to the five instrument families and link you to the first playlist featuring beautiful examples of music from each family.</p>
             </div>
             <div className="inside-item">
-              <div className="inside-number">02</div>
               <h3 className="inside-item-title">A collectible instrument card</h3>
               <p className="inside-item-desc">Each card features an instrument from David&apos;s personal collection, with facts on the back and a hidden secret: somewhere on every card, a Beatles figurine is tucked near the instrument. Each Beatle represents one of the five instrument families. Collect them all and watch out for the Blue Meanie.</p>
             </div>
             <div className="inside-item">
-              <div className="inside-number">03</div>
               <h3 className="inside-item-title">A curated playlist</h3>
               <p className="inside-item-desc">Back in the day, David made mixtapes for his friends. Now he does it for the club. Each month he assembles a YouTube playlist around the letter&apos;s theme, then records a short intro video where he walks you through each song, what he loves about it, and what to listen for.</p>
             </div>
@@ -896,7 +887,7 @@ export default function Notes() {
 
       <section className="gift-cta">
         <div className="gift-cta-inner">
-          <h2 className="section-title">Know a kid who loves music?</h2>
+          <h2 className="section-title">Know someone who loves music?</h2>
           <p className="gift-cta-sub">Give them the gift they&apos;ll look forward to every month. An entertaining letter in the mailbox, a collectible instrument card, and a playlist full of amazing music that they probably haven&apos;t heard before. No batteries, no screen time, no assembly required.</p>
           <a href="https://mrdavidmusic.memberful.com/gift?plan=147377" target="_blank" rel="noopener noreferrer" className="btn-gift">Give a gift subscription</a>
         </div>
