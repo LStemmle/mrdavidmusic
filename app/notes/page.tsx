@@ -148,7 +148,7 @@ export default function Notes() {
 
         .hero-lede {
           font-family: 'Libre Baskerville', serif;
-          font-size: 32px;
+          font-size: 40px;
           font-style: normal;
           font-weight: 700;
           line-height: 1.55;
@@ -496,7 +496,7 @@ export default function Notes() {
           text-align: center;
         }
 
-        .final-cta .section-title { color: var(--parchment); margin-bottom: 16px; }
+        .final-cta .section-title { color: var(--parchment); margin-bottom: 48px; }
 
         .final-cta-tagline {
           font-size: 18px;
@@ -830,6 +830,10 @@ export default function Notes() {
             font-size: 14px;
           }
 
+          .pricing-divider {
+            display: none;
+          }
+
           footer {
             flex-direction: column;
             gap: 8px;
@@ -856,7 +860,7 @@ export default function Notes() {
           <p className="hero-lede hero-lede-sub">
             <span style={{color: '#fff'}}>No pressure or practice charts. Just a letter, a collectible instrument card, and a playlist from a teacher who has spent 30 years making music irresistible.</span>
           </p>
-          <a href="#waitlist-section" className="btn-primary">Become a Founding Member</a>
+          <a href="#waitlist-section" className="btn-primary">Join the Club</a>
         </div>
       </section>
 
@@ -900,7 +904,7 @@ export default function Notes() {
           <div className="step">
             <div className="step-number">1</div>
             <h3 className="step-title">Subscribe</h3>
-            <p className="step-desc">Sign up for $12/month (US) or $14/month (international). You can cancel at any time, but why would you want to? Another musical adventure will be coming your way every month!</p>
+            <p className="step-desc">Sign up for $12/month (US), $14/month (international), or $5/month for digital delivery. You can cancel at any time, but why would you want to? Another musical adventure will be coming your way every month!</p>
           </div>
           <div className="step">
             <div className="step-number">2</div>
@@ -958,18 +962,27 @@ export default function Notes() {
       </section>
 
       <section className="final-cta" id="waitlist-section">
-        <div className="section-title">Become a Founding Member</div>
-        <p className="final-cta-tagline">First letters go out July 1.</p>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px'}}>
+        <div className="section-title">Join the Club</div>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px', alignItems: 'flex-start'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$12<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
-            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+            <p style={{fontSize: '12px', opacity: 0.55, margin: 0, fontStyle: 'italic'}}>Letter &amp; card in the mail</p>
+            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147377&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Subscribe Now</a>
           </div>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>International</p>
             <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$14<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
-            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147590&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Become a Founding Member</a>
+            <p style={{fontSize: '12px', opacity: 0.55, margin: 0, fontStyle: 'italic'}}>Letter &amp; card in the mail</p>
+            <a href="https://mrdavidmusic.memberful.com/checkout?plan=147590&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Subscribe Now</a>
+          </div>
+          <div style={{width: '1px', background: 'rgba(255,255,255,0.18)', alignSelf: 'stretch', margin: '0 8px'}} className="pricing-divider"></div>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
+            <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>Digital</p>
+            <p style={{fontSize: '32px', fontWeight: 700, margin: 0}}>$5<span style={{fontSize: '16px', fontWeight: 400}}>/month</span></p>
+            <p style={{fontSize: '12px', opacity: 0.55, margin: 0, fontStyle: 'italic'}}>Delivered by email</p>
+            {/* IMPORTANT: Replace DIGITAL_PLAN_ID with your Memberful digital plan ID */}
+            <a href="https://mrdavidmusic.memberful.com/checkout?plan=148311&return_url=https%3A%2F%2Fmrdavidmusic.com%2Fnotes" target="_blank" rel="noopener noreferrer" className="btn-waitlist">Subscribe Digitally</a>
           </div>
         </div>
       </section>
