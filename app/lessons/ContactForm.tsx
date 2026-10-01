@@ -40,6 +40,10 @@ export default function ContactForm() {
         <input type="email" id="email" name="email" placeholder="you@example.com" required />
       </div>
       <div className="form-group">
+        <label htmlFor="phone">Phone number <span className="optional">optional</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="919-555-0123" />
+      </div>
+      <div className="form-group">
         <label htmlFor="message">What brings you here?</label>
         <textarea id="message" name="message" placeholder="What instrument, what experience level, any questions..."></textarea>
       </div>

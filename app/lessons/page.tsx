@@ -403,6 +403,14 @@ export default function Lessons() {
           color: #7A7268;
         }
 
+        .form-group label .optional {
+          text-transform: none;
+          letter-spacing: 0.02em;
+          font-style: italic;
+          color: #5E5850;
+          margin-left: 4px;
+        }
+
         .form-group input,
         .form-group textarea {
           background-color: #2A2822;
@@ -600,7 +608,7 @@ export default function Lessons() {
         <div>
           <div className="teachers-band-label">Our teachers</div>
           <h2 className="teachers-band-title">Meet the teachers</h2>
-          <p className="teachers-band-text">David Stemmle, Rafael Green, Aaron Ford, and Julian Brown teach guitar, bass, drums, voice, songwriting, brass, and studio recording. Students are matched with the teacher who fits what they want to play.</p>
+          <p className="teachers-band-text">David Stemmle, Rafael Green, Aaron Ford, and Julian Brown teach guitar, bass, drums, voice, songwriting, brass, instrument exploration, and studio recording. Students are matched with the teacher who fits what they want to play.</p>
           <Link href="/lessons/about" className="teachers-band-link">Meet the teachers</Link>
         </div>
         <div className="teachers-band-faces">
@@ -658,7 +666,7 @@ export default function Lessons() {
             <div className="offering-card-body">
               <div className="offering-number">02</div>
               <h3 className="offering-title">Instrument Explorer</h3>
-              <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230 instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with real instruments from around the world.</p>
+              <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230 instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with instruments from around the world.</p>
             </div>
           </div>
 
