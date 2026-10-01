@@ -963,6 +963,7 @@ export default function Notes() {
 
       <section className="final-cta" id="waitlist-section">
         <div className="section-title">Join the Club</div>
+        <p className="final-cta-sub">Letters mail on the 1st of every month.</p>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '48px', flexWrap: 'wrap', marginTop: '8px', alignItems: 'flex-start'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px'}}>
             <p style={{fontSize: '13px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', opacity: 0.7, margin: 0}}>US / Domestic</p>

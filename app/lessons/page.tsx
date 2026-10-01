@@ -118,6 +118,88 @@ export default function Lessons() {
           max-width: 560px;
         }
 
+        .teachers-band {
+          background-color: var(--off-white-dark);
+          border-bottom: 1px solid var(--border);
+          padding: 44px 56px;
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 56px;
+          align-items: center;
+        }
+
+        .teachers-band-label {
+          font-family: 'Caveat', cursive;
+          font-size: 26px;
+          color: var(--orange);
+          margin-bottom: 4px;
+        }
+
+        .teachers-band-title {
+          font-family: 'Playfair Display', serif;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 1.2;
+          color: var(--dark);
+          margin-bottom: 10px;
+        }
+
+        .teachers-band-text {
+          font-size: 15px;
+          line-height: 1.8;
+          color: var(--muted);
+          max-width: 520px;
+          margin-bottom: 20px;
+        }
+
+        .teachers-band-link {
+          display: inline-block;
+          background-color: var(--orange);
+          color: #fff;
+          font-family: 'Libre Baskerville', serif;
+          font-size: 13px;
+          letter-spacing: 0.08em;
+          padding: 13px 30px;
+          text-decoration: none;
+          transition: background-color 0.2s;
+        }
+
+        .teachers-band-link:hover { background-color: var(--orange-dark); }
+
+        .teachers-band-faces {
+          display: flex;
+          gap: 10px;
+        }
+
+        .teacher-face {
+          width: 108px;
+          text-align: center;
+        }
+
+        .teacher-face img {
+          width: 108px;
+          height: 132px;
+          object-fit: cover;
+          display: block;
+          filter: grayscale(0.15);
+        }
+
+        .teacher-face .empty {
+          width: 108px;
+          height: 132px;
+          background-color: #E2DED4;
+          border: 1px dashed var(--border);
+        }
+
+        .teacher-face span {
+          display: block;
+          margin-top: 8px;
+          font-size: 11px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: var(--muted);
+        }
+
         .offerings {
           background-color: var(--off-white);
           padding: 80px 56px;
@@ -426,6 +508,25 @@ export default function Lessons() {
             font-size: 15px;
           }
 
+          .teachers-band {
+            grid-template-columns: 1fr;
+            gap: 28px;
+            padding: 36px 24px;
+          }
+
+          .teachers-band-title { font-size: 24px; }
+
+          .teachers-band-faces { flex-wrap: wrap; gap: 8px; }
+
+          .teacher-face,
+          .teacher-face img,
+          .teacher-face .empty { width: 76px; }
+
+          .teacher-face img,
+          .teacher-face .empty { height: 94px; }
+
+          .teacher-face span { font-size: 10px; }
+
           .offerings {
             padding: 48px 24px;
           }
@@ -491,12 +592,43 @@ export default function Lessons() {
         <div className="hero-content">
           <div className="hero-eyebrow">Durham, NC</div>
           <h1 className="hero-title">Music Lessons</h1>
-          <p className="hero-sub">Private lessons, studio recitals, school programs, and hands-on time with 250+ instruments from around the world.</p>
+          <p className="hero-sub">Private lessons with four teachers, plus recitals, school programs, and hands-on time with 230 instruments from around the world.</p>
+        </div>
+      </section>
+
+      <section className="teachers-band">
+        <div>
+          <div className="teachers-band-label">Our teachers</div>
+          <h2 className="teachers-band-title">Meet the teachers</h2>
+          <p className="teachers-band-text">David Stemmle, Rafael Green, Aaron Ford, and Julian Brown teach guitar, bass, drums, voice, songwriting, brass, and studio recording. Students are matched with the teacher who fits what they want to play.</p>
+          <Link href="/lessons/about" className="teachers-band-link">Meet the teachers</Link>
+        </div>
+        <div className="teachers-band-faces">
+          <div className="teacher-face">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/teachers/david-face.jpg" alt="David Stemmle" style={{objectPosition: "center 30%"}} />
+            <span>David</span>
+          </div>
+          <div className="teacher-face">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/teachers/rafael.jpg" alt="Rafael Green" style={{objectPosition: "center 42%"}} />
+            <span>Rafael</span>
+          </div>
+          <div className="teacher-face">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/teachers/aaron-face.jpg" alt="Aaron Ford" style={{objectPosition: "center 30%"}} />
+            <span>Aaron</span>
+          </div>
+          <div className="teacher-face">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/teachers/julian.jpg" alt="Julian Brown" style={{objectPosition: "58% center"}} />
+            <span>Julian</span>
+          </div>
         </div>
       </section>
 
       <section className="offerings">
-        <div className="section-label">What David offers</div>
+        <div className="section-label">What we offer</div>
         <h2 className="section-title">The studio</h2>
 
         <div className="offerings-grid">
@@ -506,7 +638,7 @@ export default function Lessons() {
             <div className="offering-card-body">
               <div className="offering-number">01</div>
               <h3 className="offering-title">Private Lessons</h3>
-              <p className="offering-desc">One-on-one lessons for students of all ages and experience levels. David meets you where you are and builds from there. Beginners welcome.</p>
+              <p className="offering-desc">One-on-one lessons for students of all ages and experience levels. Your teacher meets you where you are and builds from there. Beginners welcome.</p>
               <div className="offering-instruments">
                 <span className="instrument-tag">Guitar</span>
                 <span className="instrument-tag">Bass</span>
@@ -526,7 +658,7 @@ export default function Lessons() {
             <div className="offering-card-body">
               <div className="offering-number">02</div>
               <h3 className="offering-title">Instrument Explorer</h3>
-              <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230+ instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with real instruments from around the world.</p>
+              <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230 instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with real instruments from around the world.</p>
             </div>
           </div>
 
@@ -546,7 +678,7 @@ export default function Lessons() {
             <div className="offering-card-body">
               <div className="offering-number">04</div>
               <h3 className="offering-title">School Programs</h3>
-              <p className="offering-desc">Educational music programs for classrooms. David brings instruments and stories into schools, tailored to the age group and curriculum. Reach out to discuss availability and format.</p>
+              <p className="offering-desc">Educational music programs for classrooms. We bring instruments and stories into schools, tailored to the age group and curriculum. Reach out to discuss availability and format.</p>
             </div>
           </div>
 
@@ -574,7 +706,7 @@ export default function Lessons() {
 
       <section className="collection">
         <div className="section-label">The collection</div>
-        <h2 className="section-title">230+ instruments, available to play</h2>
+        <h2 className="section-title">230 instruments, available to play</h2>
         <p className="collection-intro">Every instrument in David&apos;s collection is available for appointment play and curiosity rent. If you&apos;ve ever wondered what a theremin sounds like, or wanted to try a steel pan, this is the place.</p>
 
         <div className="collection-grid">
@@ -618,10 +750,11 @@ export default function Lessons() {
         <p className="collection-note">All instruments available for appointment play. Get in touch to schedule.</p>
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="contact-left">
           <div className="section-label">Get in touch</div>
           <h2 className="section-title">Let&apos;s talk about the next steps in your musical journey</h2>
+          <p className="contact-intro">Tell us the instrument, the age of the student, and anything you already know about what you want out of lessons. We&apos;ll match you with the right teacher.</p>
           <div className="contact-detail">
             <div>
               <div className="contact-label">Phone</div>

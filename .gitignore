@@ -51,3 +51,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# working folder of source photos, not part of the app
+/About Us page/
