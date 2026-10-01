@@ -122,10 +122,17 @@ export default function Lessons() {
           background-color: var(--off-white-dark);
           border-bottom: 1px solid var(--border);
           padding: 44px 56px;
-          display: grid;
-          grid-template-columns: 1fr auto;
+          display: flex;
+          flex-wrap: wrap;
           gap: 56px;
           align-items: center;
+          justify-content: flex-start;
+        }
+
+        .teachers-band-text-col {
+          flex: 1 1 340px;
+          min-width: 320px;
+          max-width: 560px;
         }
 
         .teachers-band-label {
@@ -168,25 +175,26 @@ export default function Lessons() {
 
         .teachers-band-faces {
           display: flex;
-          gap: 10px;
+          gap: 12px;
+          flex: 0 0 auto;
         }
 
         .teacher-face {
-          width: 108px;
+          width: 132px;
           text-align: center;
         }
 
         .teacher-face img {
-          width: 108px;
-          height: 132px;
+          width: 132px;
+          height: 162px;
           object-fit: cover;
           display: block;
           filter: grayscale(0.15);
         }
 
         .teacher-face .empty {
-          width: 108px;
-          height: 132px;
+          width: 132px;
+          height: 162px;
           background-color: #E2DED4;
           border: 1px dashed var(--border);
         }
@@ -274,6 +282,20 @@ export default function Lessons() {
           flex-wrap: wrap;
           gap: 6px;
         }
+
+        .card-link {
+          display: inline-block;
+          margin-top: 16px;
+          font-size: 13px;
+          letter-spacing: 0.04em;
+          color: var(--orange);
+          text-decoration: none;
+          border-bottom: 1px solid #E8C8B4;
+          padding-bottom: 2px;
+          transition: color 0.2s, border-color 0.2s;
+        }
+
+        .card-link:hover { color: var(--orange-dark); border-color: var(--orange-dark); }
 
         .instrument-tag {
           font-family: 'Libre Baskerville', serif;
@@ -517,10 +539,11 @@ export default function Lessons() {
           }
 
           .teachers-band {
-            grid-template-columns: 1fr;
             gap: 28px;
             padding: 36px 24px;
           }
+
+          .teachers-band-text-col { flex: 1 1 100%; min-width: 0; }
 
           .teachers-band-title { font-size: 24px; }
 
@@ -605,7 +628,7 @@ export default function Lessons() {
       </section>
 
       <section className="teachers-band">
-        <div>
+        <div className="teachers-band-text-col">
           <div className="teachers-band-label">Our teachers</div>
           <h2 className="teachers-band-title">Meet the teachers</h2>
           <p className="teachers-band-text">David Stemmle, Rafael Green, Aaron Ford, and Julian Brown teach guitar, bass, drums, voice, songwriting, brass, instrument exploration, and studio recording. Students are matched with the teacher who fits what they want to play.</p>
@@ -667,6 +690,7 @@ export default function Lessons() {
               <div className="offering-number">02</div>
               <h3 className="offering-title">Instrument Explorer</h3>
               <p className="offering-desc">A multi-week series where students explore David&apos;s collection of 230 instruments, one family per week: brass, strings, percussion, synthesizers, world instruments, and more. Each week is hands-on with instruments from around the world.</p>
+              <a className="card-link" href="https://www.youtube.com/playlist?list=PL2w1TmHDI_Ptbwm5DLzPp96ts9Ek1pJbp" target="_blank" rel="noopener noreferrer">Watch 100 Instruments in 100 Days &rarr;</a>
             </div>
           </div>
 
